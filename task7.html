@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #date-container {
+            background-color: aqua;
+            padding: 40px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            width: 100%;
+        }
+        .addBtn {
+        grid-area: "btn";
+        padding: 10px;
+        width: 20%;
+        background: #d9d9d9;
+        color: #555;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+        }
+  
+        .addBtn:hover {
+            background-color: #bbb;
+        }
+        input {
+        grid-area: "input";
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 70%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+        }
+        .header:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2 {
+            grid-area: "h2";
+            width: 100%;
+        }
+        .input-container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="date-container">
+        <h2 class="title">Get month by full date!</h2>
+        <div class="input-container">
+            <input type="text" name="" id="date" placeholder="Insert date in the given fomrat: mm/dd/yyyy">
+            <span onclick="monthName()" class="addBtn">Get month</span>
+        </div>
+            
+    </div>
+    <script src="task7.js"></script>
+</body>
+</html>
